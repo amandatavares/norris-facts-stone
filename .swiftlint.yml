@@ -13,7 +13,7 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Pods
   - "*/AppDelegate.swift"
   - "*/NorrisFactsTests.swift"
-  - "*/NorrisFacts/norrisFactsUITests.swift"
+  - "*/NorrisFactsUITests.swift"
   - "*/SceneDelegate.swift"
 analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
   - explicit_self
