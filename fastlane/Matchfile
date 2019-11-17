@@ -1,0 +1,19 @@
+git_url("git@github.com:amandatavares/certificates.git")
+
+storage_mode("git")
+
+type("development") # The default type, can be: appstore, adhoc, enterprise or development
+
+app_identifier(["com.academyifce.NorrisFacts", "com.academyifce.NorrisFacts"])
+username("amandatvt@gmail.com") # Your Apple Developer Portal username
+
+# match(git_basic_authorization: 'd99df4d96043f89655b220ed563bf638eb706594')
+ENV['MATCH_GIT_BASIC_AUTHORIZATION'] = 'd99df4d96043f89655b220ed563bf638eb706594'
+match
+
+git_branch("develop")
+
+# For all available options run `fastlane match --help`
+# Remove the # in the beginning of the line to enable the other options
+
+# The docs are available on https://docs.fastlane.tools/actions/match
