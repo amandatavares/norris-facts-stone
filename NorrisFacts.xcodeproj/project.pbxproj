@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		8118517A237C958C0064C9BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81185178237C958C0064C9BD /* LaunchScreen.storyboard */; };
 		81185185237C958C0064C9BD /* NorrisFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81185184237C958C0064C9BD /* NorrisFactsTests.swift */; };
 		81185190237C958C0064C9BD /* NorrisFactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118518F237C958C0064C9BD /* NorrisFactsUITests.swift */; };
+		811851A5237DF70A0064C9BD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 811851A4237DF70A0064C9BD /* RxSwift */; };
+		811851A7237DF70A0064C9BD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 811851A6237DF70A0064C9BD /* RxCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811851A7237DF70A0064C9BD /* RxCocoa in Frameworks */,
+				811851A5237DF70A0064C9BD /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,12 +142,17 @@
 				81185166237C95880064C9BD /* Sources */,
 				81185167237C95880064C9BD /* Frameworks */,
 				81185168237C95880064C9BD /* Resources */,
+				8118519D237C990A0064C9BD /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NorrisFacts;
+			packageProductDependencies = (
+				811851A4237DF70A0064C9BD /* RxSwift */,
+				811851A6237DF70A0064C9BD /* RxCocoa */,
+			);
 			productName = NorrisFacts;
 			productReference = 8118516A237C95880064C9BD /* NorrisFacts.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 81185161237C95880064C9BD;
+			packageReferences = (
+				811851A1237DF70A0064C9BD /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 8118516B237C95880064C9BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,6 +265,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8118519D237C990A0064C9BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: Swiftlint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81185166237C95880064C9BD /* Sources */ = {
@@ -441,6 +473,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NorrisFacts",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.academyifce.NorrisFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -459,6 +495,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NorrisFacts",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.academyifce.NorrisFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -471,6 +511,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7LBWA3M99;
 				INFOPLIST_FILE = NorrisFactsTests/Info.plist;
@@ -493,6 +534,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7LBWA3M99;
 				INFOPLIST_FILE = NorrisFactsTests/Info.plist;
@@ -590,6 +632,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		811851A1237DF70A0064C9BD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		811851A4237DF70A0064C9BD /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 811851A1237DF70A0064C9BD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		811851A6237DF70A0064C9BD /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 811851A1237DF70A0064C9BD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 81185162237C95880064C9BD /* Project object */;
 }
