@@ -1,6 +1,6 @@
-# app_identifier("[[APP_IDENTIFIER]]") # The bundle identifier of your app
-# apple_id("[[APPLE_ID]]") # Your Apple email address
-
+app_identifier("com.academyifce.NorrisFacts") # The bundle identifier of your app
+apple_id("amandatvt@gmail.com") # Your Apple email address
+team_id("BM834VPC2V")
 
 # For more information about the Appfile, see:
 #     https://docs.fastlane.tools/advanced/#appfile

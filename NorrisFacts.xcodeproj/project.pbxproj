@@ -15,7 +15,7 @@
 		8118517A237C958C0064C9BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81185178237C958C0064C9BD /* LaunchScreen.storyboard */; };
 		81185185237C958C0064C9BD /* NorrisFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81185184237C958C0064C9BD /* NorrisFactsTests.swift */; };
 		81185190237C958C0064C9BD /* NorrisFactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118518F237C958C0064C9BD /* NorrisFactsUITests.swift */; };
-		811851A3237DF70A0064C9BD /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 811851A2237DF70A0064C9BD /* RxTest */; };
+		811851A3237DF70A0064C9BD /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 811851A2237DF70A0064C9BD /* RxTest */; settings = {ATTRIBUTES = (Weak, ); }; };
 		811851A5237DF70A0064C9BD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 811851A4237DF70A0064C9BD /* RxSwift */; };
 		811851A7237DF70A0064C9BD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 811851A6237DF70A0064C9BD /* RxCocoa */; };
 /* End PBXBuildFile section */
