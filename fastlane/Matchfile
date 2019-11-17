@@ -6,7 +6,11 @@ type("development") # The default type, can be: appstore, adhoc, enterprise or d
 
 app_identifier(["com.academyifce.NorrisFacts", "com.academyifce.NorrisFacts"])
 username("amandatvt@gmail.com") # Your Apple Developer Portal username
-match(git_basic_authorization: 'd99df4d96043f89655b220ed563bf638eb706594')
+
+# match(git_basic_authorization: 'd99df4d96043f89655b220ed563bf638eb706594')
+ENV['MATCH_GIT_BASIC_AUTHORIZATION'] = 'd99df4d96043f89655b220ed563bf638eb706594'
+match
+
 git_branch("develop")
 
 # For all available options run `fastlane match --help`

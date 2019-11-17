@@ -6,5 +6,5 @@ xcode_scheme: NorrisFacts
 xcode_destination: platform=iOS Simulator,OS=13.1,name=iPhone 11
 install:
   - bundle install
-script:
-  - fastlane beta
+# script:
+#   - fastlane beta
