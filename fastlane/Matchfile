@@ -4,8 +4,10 @@ storage_mode("git")
 
 type("development") # The default type, can be: appstore, adhoc, enterprise or development
 
-# app_identifier(["tools.fastlane.app", "tools.fastlane.app2"])
-# username("user@fastlane.tools") # Your Apple Developer Portal username
+app_identifier(["com.academyifce.NorrisFacts", "com.academyifce.NorrisFacts"])
+username("amandatvt@gmail.com") # Your Apple Developer Portal username
+match(git_basic_authorization: 'd99df4d96043f89655b220ed563bf638eb706594')
+git_branch("develop")
 
 # For all available options run `fastlane match --help`
 # Remove the # in the beginning of the line to enable the other options
