@@ -14,9 +14,17 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavBar() 
         self.view = customView
+        
+        title = "Explore"
     }
     
+    private func setupNavBar() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "􀊫", style: .plain, target: nil, action: nil)
+    }
     /*
     // MARK: - Navigation
 
