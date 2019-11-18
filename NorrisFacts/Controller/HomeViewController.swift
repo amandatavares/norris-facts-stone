@@ -10,10 +10,13 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    let customView = HomeView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
+        self.view = customView
     }
+    
     /*
     // MARK: - Navigation
 
