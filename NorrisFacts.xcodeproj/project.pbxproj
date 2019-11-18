@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		811589D32382082200B633D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811589D22382082200B633D3 /* HomeViewController.swift */; };
+		811589D5238208B000B633D3 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811589D4238208B000B633D3 /* Fact.swift */; };
+		811589D72382092A00B633D3 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811589D62382092A00B633D3 /* Categories.swift */; };
+		811589D923820D2700B633D3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811589D823820D2700B633D3 /* NetworkService.swift */; };
+		811589DB238211B500B633D3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811589DA238211B500B633D3 /* HomeView.swift */; };
+		811589DD2382153100B633D3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811589DC2382153100B633D3 /* SearchView.swift */; };
+		811589DF238216F300B633D3 /* UIView+addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811589DE238216F300B633D3 /* UIView+addSubviews.swift */; };
 		8118516E237C95880064C9BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118516D237C95880064C9BD /* AppDelegate.swift */; };
 		81185170237C95880064C9BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118516F237C95880064C9BD /* SceneDelegate.swift */; };
 		81185177237C958C0064C9BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81185176237C958C0064C9BD /* Assets.xcassets */; };
@@ -37,6 +43,12 @@
 
 /* Begin PBXFileReference section */
 		811589D22382082200B633D3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		811589D4238208B000B633D3 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		811589D62382092A00B633D3 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		811589D823820D2700B633D3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		811589DA238211B500B633D3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		811589DC2382153100B633D3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		811589DE238216F300B633D3 /* UIView+addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addSubviews.swift"; sourceTree = "<group>"; };
 		8118516A237C95880064C9BD /* NorrisFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorrisFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8118516D237C95880064C9BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8118516F237C95880064C9BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +101,8 @@
 		811589CC2382067D00B633D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				811589DA238211B500B633D3 /* HomeView.swift */,
+				811589DC2382153100B633D3 /* SearchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +110,8 @@
 		811589CD2382068400B633D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				811589D4238208B000B633D3 /* Fact.swift */,
+				811589D62382092A00B633D3 /* Categories.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +126,8 @@
 		811589CF2382070600B633D3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				811589D823820D2700B633D3 /* NetworkService.swift */,
+				811589DE238216F300B633D3 /* UIView+addSubviews.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -328,8 +346,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8118516E237C95880064C9BD /* AppDelegate.swift in Sources */,
+				811589DB238211B500B633D3 /* HomeView.swift in Sources */,
+				811589D72382092A00B633D3 /* Categories.swift in Sources */,
+				811589DF238216F300B633D3 /* UIView+addSubviews.swift in Sources */,
 				81185170237C95880064C9BD /* SceneDelegate.swift in Sources */,
+				811589DD2382153100B633D3 /* SearchView.swift in Sources */,
 				811589D32382082200B633D3 /* HomeViewController.swift in Sources */,
+				811589D923820D2700B633D3 /* NetworkService.swift in Sources */,
+				811589D5238208B000B633D3 /* Fact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
