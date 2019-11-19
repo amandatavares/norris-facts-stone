@@ -23,7 +23,14 @@ class HomeViewController: UIViewController {
     private func setupNavBar() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "􀊫", style: .plain, target: nil, action: nil)
+//        self.navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "test", style: .plain, target: nil, action: nil)
+//        self.navigationController?.navigationItem.rightBarButtonItems = [UIBarButtonItem(title: "test", style: .plain, target: nil, action: nil)]
+        let search = UIBarButtonItem(image: UIImage(named: "magnifyingglass"), style: .plain, target: self, action: #selector(searchBtnTapped)) // action:#selector(Class.MethodName) for swift 3
+        self.navigationItem.setRightBarButton(search, animated: true)
+    }
+    
+    @objc func searchBtnTapped() {
+        print("search tapped")
     }
     /*
     // MARK: - Navigation
