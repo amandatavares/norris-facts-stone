@@ -21,7 +21,7 @@ class HomeView: UIView {
     private lazy var messageLabel: UILabel = {
         let label = UILabel()
         label.text = "Search some term or category to see some facts about Chuck Norris, 'cause he just know all the facts about you"
-        label.textColor = .darkGray
+        label.textColor = .label
         label.font = UIFont.systemFont(ofSize: 15)
         label.textAlignment = .center
         label.numberOfLines = 4

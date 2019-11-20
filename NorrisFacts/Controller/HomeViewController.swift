@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
         self.view = customView
         let searchIcon = UIImage(systemName: "magnifyingglass")
         let search = UIBarButtonItem(image: searchIcon, style: .plain, target: self, action: #selector(searchBtnTapped))
-        search.tintColor = .black
+        search.tintColor = .label
         self.navigationItem.rightBarButtonItem = search
         
         title = "Explore"
