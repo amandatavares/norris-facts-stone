@@ -2,6 +2,7 @@ disabled_rules: # rule identifiers to exclude from running
   - colon
   - comma
   - control_statement
+  - trailing_whitespace
 opt_in_rules: # some rules are only opt-in
   - empty_count
   # Find all the available rules by running:
@@ -47,5 +48,6 @@ identifier_name:
   excluded: # excluded via string array
     - id
     - URL
+    - url
     - GlobalAPIKey
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji, sonarqube, markdown)
