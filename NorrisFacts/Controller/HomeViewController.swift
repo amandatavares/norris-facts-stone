@@ -16,6 +16,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupNavBar() 
         self.view = customView
+        let searchIcon = UIImage(systemName: "magnifyingglass")
+        let search = UIBarButtonItem(image: searchIcon, style: .plain, target: self, action: #selector(searchBtnTapped))
+        search.tintColor = .black
+        self.navigationItem.rightBarButtonItem = search
         
         title = "Explore"
     }
@@ -25,8 +29,7 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
 //        self.navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "test", style: .plain, target: nil, action: nil)
 //        self.navigationController?.navigationItem.rightBarButtonItems = [UIBarButtonItem(title: "test", style: .plain, target: nil, action: nil)]
-        let search = UIBarButtonItem(image: UIImage(named: "magnifyingglass"), style: .plain, target: self, action: #selector(searchBtnTapped)) // action:#selector(Class.MethodName) for swift 3
-        self.navigationItem.setRightBarButton(search, animated: true)
+        
     }
     
     @objc func searchBtnTapped() {

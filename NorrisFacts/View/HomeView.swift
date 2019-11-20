@@ -9,16 +9,6 @@
 import UIKit
 
 class HomeView: UIView {
-
-//    private lazy var navigationLabel: UILabel = {
-//        let label = UILabel()
-//        label.text = "It’s Chuck Norris that explores you"
-//        label.textColor = .darkGray
-//        label.font = UIFont.systemFont(ofSize: 15)
-//        label.textAlignment = .center
-//        label.numberOfLines = 4
-//        return label
-//    }()
     
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
