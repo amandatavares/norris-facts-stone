@@ -13,6 +13,7 @@ class HomeView: UIView {
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "norrisEmpty")
+        imageView.tintColor = .label
         imageView.isOpaque = true
         imageView.alpha = 0.5
         return imageView
