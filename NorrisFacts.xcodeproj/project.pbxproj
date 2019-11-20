@@ -22,6 +22,7 @@
 		81185190237C958C0064C9BD /* NorrisFactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118518F237C958C0064C9BD /* NorrisFactsUITests.swift */; };
 		811851A5237DF70A0064C9BD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 811851A4237DF70A0064C9BD /* RxSwift */; };
 		811851A7237DF70A0064C9BD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 811851A6237DF70A0064C9BD /* RxCocoa */; };
+		8170DEFB23855DB800F21AC3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170DEFA23855DB800F21AC3 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		8118518B237C958C0064C9BD /* NorrisFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorrisFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8118518F237C958C0064C9BD /* NorrisFactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisFactsUITests.swift; sourceTree = "<group>"; };
 		81185191237C958C0064C9BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8170DEFA23855DB800F21AC3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				811589D22382082200B633D3 /* HomeViewController.swift */,
+				8170DEFA23855DB800F21AC3 /* SearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8170DEFB23855DB800F21AC3 /* SearchViewController.swift in Sources */,
 				8118516E237C95880064C9BD /* AppDelegate.swift in Sources */,
 				811589DB238211B500B633D3 /* HomeView.swift in Sources */,
 				811589D72382092A00B633D3 /* Categories.swift in Sources */,
