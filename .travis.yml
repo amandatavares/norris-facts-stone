@@ -3,7 +3,7 @@ language: swift
 os: osx
 xcode_project: NorrisFacts.xcodeproj
 xcode_scheme: NorrisFacts
-xcode_destination: platform=iOS Simulator,OS=13.2,name=iPhone 11
+xcode_destination: platform=iOS Simulator,OS=13.2,name=iPhone 8 Plus
 install:
   - bundle install
 # script:
