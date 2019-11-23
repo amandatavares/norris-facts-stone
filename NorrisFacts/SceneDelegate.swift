@@ -15,13 +15,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
         let rootController = HomeViewController()
-        let homeNavControler = UINavigationController(rootViewController: rootController)
-        homeNavControler.navigationBar.prefersLargeTitles = true
-        homeNavControler.navigationBar.tintColor = .systemBackground
+//        let homeNavControler = UINavigationController(rootViewController: rootController)
+//        homeNavControler.navigationBar.prefersLargeTitles = true
+//        homeNavControler.navigationBar.tintColor = .systemBackground
         
         guard let windowScene = (scene as? UIWindowScene) else { return; }
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = homeNavControler
+        window?.rootViewController = rootController
         window?.makeKeyAndVisible()
     }
 

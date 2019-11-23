@@ -8,28 +8,37 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UINavigationBarDelegate, UINavigationControllerDelegate {
 
     let customView = HomeView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavBar() 
         self.view = customView
+        setupNavBar()
+    }
+    
+    private func setupNavBar() {
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
+        // step 1 = create Navigation Bar
+        let navbar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 59.0))
+        navbar.delegate = self
+//        navbar.prefersLargeTitles = true
+
+        navbar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navbar.shadowImage = UIImage()
+        
+        //step 3 = create BarButtonItem and set position (left, right)
         let searchIcon = UIImage(systemName: "magnifyingglass")
         let search = UIBarButtonItem(image: searchIcon, style: .plain, target: self, action: #selector(searchBtnTapped))
         search.tintColor = .label
         self.navigationItem.rightBarButtonItem = search
-        
         title = "Explore"
-    }
-    
-    private func setupNavBar() {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-//        self.navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "test", style: .plain, target: nil, action: nil)
-//        self.navigationController?.navigationItem.rightBarButtonItems = [UIBarButtonItem(title: "test", style: .plain, target: nil, action: nil)]
-        
+
+        //step 5 = add Navigation Bar to view
+        self.view.addSubview(navbar)
     }
     
     @objc func searchBtnTapped() {
