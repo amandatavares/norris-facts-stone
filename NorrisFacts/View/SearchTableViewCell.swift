@@ -12,16 +12,17 @@ class SearchTableViewCell: UITableViewCell {
 
     lazy var categoryLabel: UILabel = {
         let label = UILabel()
-        label.tintColor = .systemGray
+        //        label = UIFont.TextStyle.headline
+        label.text = "Tecnology".uppercased()
+        label.tintColor = .systemBlue
 //        label.font = UIFont.systemFont(ofSize: 14.5)
         return label
     }()
     
     lazy var quoteLabel: UILabel = {
         let label = UILabel()
-//        label = UIFont.TextStyle.headline
-        label.text = String(stringLiteral: "Tecnology").uppercased()
-        label.tintColor = .systemBlue
+        label.text = "If a vampire bites Chuck Norris, it becomes his slave."
+        label.tintColor = .systemGray
         return label
     }()
     

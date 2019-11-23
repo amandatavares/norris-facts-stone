@@ -15,7 +15,6 @@ class NetworkService {
     private let baseURL = URL(string: "https://api.chucknorris.io/jokes/random")
     private let categoriesURL = URL(string: "https://api.chucknorris.io/jokes/categories")
 
-
 //    // Enum Endpoint
 //    enum Endpoint: String, CustomStringConvertible, CaseIterable {
 //        case category
