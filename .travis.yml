@@ -1,9 +1,9 @@
-osx_image: xcode11.2.1
+osx_image: xcode11.2
 language: swift
 os: osx
 xcode_project: NorrisFacts.xcodeproj
 xcode_scheme: NorrisFacts
-xcode_destination: platform=iOS Simulator, OS=13.2.2, name=iPhone 11
+xcode_destination: platform=iOS Simulator,OS=13.2,name=iPhone 11
 install:
   - bundle install
 # script:
