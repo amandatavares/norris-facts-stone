@@ -23,6 +23,7 @@
 		811851A5237DF70A0064C9BD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 811851A4237DF70A0064C9BD /* RxSwift */; };
 		811851A7237DF70A0064C9BD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 811851A6237DF70A0064C9BD /* RxCocoa */; };
 		8123DD862388A6680008DD61 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123DD852388A6680008DD61 /* SearchTableViewCell.swift */; };
+		8123DD882388B0760008DD61 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123DD872388B0760008DD61 /* SearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		8118518F237C958C0064C9BD /* NorrisFactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisFactsUITests.swift; sourceTree = "<group>"; };
 		81185191237C958C0064C9BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8123DD852388A6680008DD61 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		8123DD872388B0760008DD61 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				811589D22382082200B633D3 /* HomeViewController.swift */,
+				8123DD872388B0760008DD61 /* SearchTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				811589DD2382153100B633D3 /* SearchView.swift in Sources */,
 				811589D32382082200B633D3 /* HomeViewController.swift in Sources */,
 				811589D923820D2700B633D3 /* NetworkService.swift in Sources */,
+				8123DD882388B0760008DD61 /* SearchTableViewController.swift in Sources */,
 				811589D5238208B000B633D3 /* Fact.swift in Sources */,
 				8123DD862388A6680008DD61 /* SearchTableViewCell.swift in Sources */,
 			);
