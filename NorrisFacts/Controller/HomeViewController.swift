@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UINavigationBarDelegate, UINavigationControllerDelegate {
+class HomeViewController: UIViewController {
 
     let customView = HomeView()
     
