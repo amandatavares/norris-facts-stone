@@ -25,6 +25,7 @@
 		8123DD862388A6680008DD61 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123DD852388A6680008DD61 /* SearchTableViewCell.swift */; };
 		81AC74A8238B275400364FB1 /* SearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC74A7238B275400364FB1 /* SearchDataSource.swift */; };
 		81AC74AA238B37D900364FB1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC74A9238B37D900364FB1 /* SearchViewController.swift */; };
+		81AC74AC238B3E6000364FB1 /* SearchTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC74AB238B3E6000364FB1 /* SearchTableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		8123DD852388A6680008DD61 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		81AC74A7238B275400364FB1 /* SearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataSource.swift; sourceTree = "<group>"; };
 		81AC74A9238B37D900364FB1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		81AC74AB238B3E6000364FB1 /* SearchTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		811589CE2382070100B633D3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				81AC74AB238B3E6000364FB1 /* SearchTableViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -136,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				811589D823820D2700B633D3 /* NetworkService.swift */,
-				811589DE238216F300B633D3 /* UIView+addSubviews.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -164,6 +166,7 @@
 		8118516C237C95880064C9BD /* NorrisFacts */ = {
 			isa = PBXGroup;
 			children = (
+				81AC74AD238B470B00364FB1 /* Extensions */,
 				811589CF2382070600B633D3 /* Utils */,
 				811589CD2382068400B633D3 /* Model */,
 				811589CE2382070100B633D3 /* ViewModel */,
@@ -194,6 +197,14 @@
 				81185191237C958C0064C9BD /* Info.plist */,
 			);
 			path = NorrisFactsUITests;
+			sourceTree = "<group>";
+		};
+		81AC74AD238B470B00364FB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				811589DE238216F300B633D3 /* UIView+addSubviews.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +373,7 @@
 				811589DD2382153100B633D3 /* SearchView.swift in Sources */,
 				811589D32382082200B633D3 /* HomeViewController.swift in Sources */,
 				81AC74A8238B275400364FB1 /* SearchDataSource.swift in Sources */,
+				81AC74AC238B3E6000364FB1 /* SearchTableViewModel.swift in Sources */,
 				81AC74AA238B37D900364FB1 /* SearchViewController.swift in Sources */,
 				811589D923820D2700B633D3 /* NetworkService.swift in Sources */,
 				811589D5238208B000B633D3 /* Fact.swift in Sources */,
