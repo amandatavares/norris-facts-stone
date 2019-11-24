@@ -8,20 +8,18 @@
 
 import UIKit
 
-class SearchView: UIView {
-    //    let datasource = HomeDataSource()
+class SearchView: UIView, UITableViewDelegate {
+    let dataSource = SearchDataSource()
 
-      private lazy var tableView: UITableView = {
-            let tableView = UITableView()
-            tableView.translatesAutoresizingMaskIntoConstraints = false
-    //        table.register(StoryTableViewCell.self, forCellReuseIdentifier: "storyCell")
-    //        table.delegate = self
-    //        table.dataSource = datasource
-            tableView.separatorStyle = .none
-            tableView.backgroundColor = .clear
-    //        table.showsVerticalScrollIndicator = false
-            return tableView
-        }()
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: "searchCell")
+        tableView.delegate = self
+        tableView.dataSource = dataSource
+        tableView.separatorStyle = .none
+        tableView.backgroundColor = .clear
+        return tableView
+    }()
         
     private func setupConstraints() {
         NSLayoutConstraint.activate([
