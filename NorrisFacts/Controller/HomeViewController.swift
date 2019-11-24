@@ -14,22 +14,20 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavBar() 
         self.view = customView
-        let searchIcon = UIImage(systemName: "magnifyingglass")
-        let search = UIBarButtonItem(image: searchIcon, style: .plain, target: self, action: #selector(searchBtnTapped))
-        search.tintColor = .label
-        self.navigationItem.rightBarButtonItem = search
-        
-        title = "Explore"
+        setupNavBar()
     }
     
     private func setupNavBar() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-//        self.navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "test", style: .plain, target: nil, action: nil)
-//        self.navigationController?.navigationItem.rightBarButtonItems = [UIBarButtonItem(title: "test", style: .plain, target: nil, action: nil)]
         
+        // Add search icon
+        let searchIcon = UIImage(systemName: "magnifyingglass")
+        let search = UIBarButtonItem(image: searchIcon, style: .plain, target: self, action: #selector(searchBtnTapped))
+        search.tintColor = .label
+        self.navigationItem.rightBarButtonItem = search
+        title = "Explore"
     }
     
     @objc func searchBtnTapped() {

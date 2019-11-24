@@ -1,5 +1,5 @@
-osx_image: xcode11.2
 language: swift
+osx_image: xcode11.2
 os: osx
 xcode_project: NorrisFacts.xcodeproj
 xcode_scheme: NorrisFacts

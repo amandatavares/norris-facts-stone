@@ -37,7 +37,7 @@ class HomeView: UIView {
             imageView.widthAnchor.constraint(lessThanOrEqualToConstant: 190.0),
             messageLabel.widthAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 1.5),
             messageLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20),
-            messageLabel.centerXAnchor.constraint(equalToSystemSpacingAfter: self.imageView.centerXAnchor, multiplier: 0.1)
+            messageLabel.centerXAnchor.constraint(equalTo: imageView.centerXAnchor)
         ])
     }
     
