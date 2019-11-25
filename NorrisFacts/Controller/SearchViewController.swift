@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class SearchViewController: UIViewController {
     let customView = SearchView()
-
+    
     override func viewDidLoad() {
-       super.viewDidLoad()
-       self.view = customView
-       
-        // Do any additional setup after loading the view.
+        super.viewDidLoad()
+        self.view = customView
+        
+    }
+    
+    private func setupNavBar() {
+        navigationItem.hidesSearchBarWhenScrolling = false
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationItem.prompt = "Searched term"
+        title = "\("Star Wars")" // add searched term from viewModel
     }
 
 }

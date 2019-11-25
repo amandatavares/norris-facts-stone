@@ -8,9 +8,16 @@
 
 import Foundation
 
-struct Fact {
+struct Fact: Decodable {
     let id: Int
     let url: String?
     let value: String
-    let categories: Category?
+    let categories: Categories?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case url
+        case value
+        case categories
+    }
 }

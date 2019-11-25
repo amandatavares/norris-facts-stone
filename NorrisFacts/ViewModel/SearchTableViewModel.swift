@@ -11,6 +11,6 @@ import RxSwift
 import RxCocoa
 
 class SearchTableViewModel {
-    
-}
+    let network = NetworkService.shared
 
+}
